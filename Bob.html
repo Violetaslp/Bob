@@ -1,46 +1,85 @@
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Bob.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Project</title>
+    <title>Updated Homework 1</title>
+    <style>
+        /* Commenting out existing styling for li */
+        /* li {
+            list-style-type: none;
+        } */
+        
+        nav {
+            display: inline-block;
+            width: 80%;
+        }
+
+        nav img {
+            width: 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
     <header>
-        <h1>Welcome to My HTML Project</h1>
+        <h1>Welcome to My Updated Website</h1>
     </header>
-    
-    <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This page showcases my knowledge of HTML, including semantic elements, images, and lists.</p>
+
+    <nav>
+        <img src="logo.png" alt="Site Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="grid">
+            <div>
+                <img src="image1.jpg" alt="Description 1">
+                <p>Some text about the image.</p>
+            </div>
+            <div>
+                <img src="image2.jpg" alt="Description 2">
+                <p>More text about another image.</p>
+            </div>
         </section>
-        
-        <section>
-            <h2>My Favorite Animals</h2>
-            <ul>
-                <li>Cats</li>
-                <li>Dogs</li>
-                <li>Elephants</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Gallery</h2>
-            <img src="https://via.placeholder.com/200" alt="Placeholder image of a cat">
-            <img src="https://via.placeholder.com/200" alt="Placeholder image of a dog">
-            <img src="https://via.placeholder.com/200" alt="Placeholder image of an elephant">
-        </section>
-        
-        <section>
-            <h2>External Resources</h2>
-            <p>Learn more about animals on <a href="https://www.nationalgeographic.com/animals/" target="_blank">National Geographic</a>.</p>
+
+        <section class="flex">
+            <div>
+                <img src="flex1.jpg" alt="Flex Image 1">
+                <p>Flex box item 1.</p>
+            </div>
+            <div>
+                <img src="flex2.jpg" alt="Flex Image 2">
+                <p>Flex box item 2.</p>
+            </div>
         </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 My HTML Project</p>
+        <p>&copy; 2025 My Website</p>
     </footer>
 </body>
 </html>
